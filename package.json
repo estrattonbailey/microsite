@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "/server/index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "build": "browserify app/index.js --debug | exorcist public/index.js.map > public/index.js",
     "watch": "watchify ./app/index.js -o ./public/index.js"
   },
