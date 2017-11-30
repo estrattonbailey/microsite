@@ -1,0 +1,31 @@
+{
+  "name": "@estrattonbailey/root",
+  "version": "0.0.1",
+  "main": "/server/index.js",
+  "scripts": {
+    "build": "browserify app/index.js --debug | exorcist public/index.js.map > public/index.js",
+    "watch": "watchify ./app/index.js -o ./public/index.js"
+  },
+  "author": "estrattonbailey",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "concurrently": "^3.5.0",
+    "exorcist": "^1.0.0",
+    "nodemon": "^1.11.0",
+    "uglifyify": "^4.0.5",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "choo": "^6.6.0",
+    "classnames": "^2.2.5",
+    "compression": "^1.7.1",
+    "contentful": "^5.0.5",
+    "cxs": "^6.1.0",
+    "express": "^4.16.2",
+    "hyp": "^1.0.0-beta.5",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  }
+}
