@@ -26,6 +26,7 @@ module.exports = function App (children = '', css = '') {
         <meta name="twitter:image" content=""/>
 
         <link rel='stylesheet' href='https://unpkg.com/svbstrate@4.0.6/dist/svbstrate.css' />
+        <link rel='stylesheet' href='/main.css' />
 
         <title>estrattonbailey</title>
 
