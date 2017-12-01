@@ -4,6 +4,7 @@
 
 :root {
   --black: #333;
+  --blue: #0000FF;
 }
 
 @font-face {
@@ -34,10 +35,13 @@
 html, body {
   font-family: 'Inter', helvetica;
   color: #333;
+  background: #FFFDF9;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  color: var(--blue);
+  letter-spacing: 0.05em;
 }
 h1, .h1 {
   font-size: calc((40 / 16) * 1rem);
@@ -56,4 +60,14 @@ h5, .h5 {
 }
 h6, .h6 {
   font-size: calc((10 / 16) * 1rem);
+}
+
+.cb {
+  color: var(--black)
+}
+.cblue {
+  color: var(--blue)
+}
+.track {
+  letter-spacing: 0.2em;
 }

@@ -4,11 +4,13 @@ const connect = require('../lib/connect.js')
 const Outer = require('../components/Outer.js')
 const Header = require('../components/Header.js')
 const Internets = require('../components/Internets.js')
+const Projects = require('../components/Projects.js')
 
 module.exports = connect(function Home([ homepage, internets, projects ]) {
   return Outer([
     Header(homepage.bio),
-    Internets(internets)
+    Internets(internets),
+    Projects(projects)
   ])
 }, function () {
   const homepage = api.getEntries({
