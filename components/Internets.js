@@ -8,9 +8,7 @@ module.exports = function Header ({ internets }) {
         marginBottom: '5em'
       }
     }}>
-      <h2 class='h6 caps track' css=${{
-        color: 'var(--c0)'
-      }}><em>Internets</em></h2>
+      <h2 class='h6 caps track pb1'><em>Internets</em></h2>
 
       <ul class='mt1 f fw'>
         ${internets.map((int, i) => h`
@@ -20,7 +18,7 @@ module.exports = function Header ({ internets }) {
               'opacity': 1
             }
           }}>
-            <h3 class='rel'>
+            <h3 class='rel mb025'>
               <sup class='h6 abs left b' css=${{
                 color: 'var(--c1)',
                 top: '8px',
@@ -31,11 +29,11 @@ module.exports = function Header ({ internets }) {
               ${int.title}
             </h3>
 
-            <h6 class='mt0 f aic' css=${{ marginTop: '-3px' }}>
+            <p class='h6 mt0 f aic' css=${{ marginTop: '-3px' }}>
               <span css=${{ color: 'var(--c1)' }}>@ ${int.company}</span>
-              <span class='mx1'>-</span>
+              <span class='mx05'>-</span>
               <span class='i'>${int.launchDate}</span>
-            </h6>
+            </p>
 
             <a href='${int.url}' target='_blank' class='abs fill z1'></a>
           </li>

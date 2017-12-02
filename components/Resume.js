@@ -34,7 +34,7 @@ module.exports = function Projects () {
         marginBottom: '5em'
       }
     }}>
-      <h2 class='h6 caps cb track'><em>Résumé</em></h2>
+      <h2 class='h6 caps cb track pb1'><em>Résumé</em></h2>
 
       <ul class='mt1 f fw'>
         ${resume.map(r => h`
@@ -57,7 +57,7 @@ module.exports = function Projects () {
               ${r.company}
             </h4>
             <p class='h5 my0'>${r.roles}</p>
-            <h6 class='mt05'>${r.dates}</h6>
+            <p class='h6 mt025'>${r.dates}</p>
 
             ${r.url && h`<a href='${r.url}' target='_blank' class='abs fill z1'></a>`}
           </li>

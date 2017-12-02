@@ -8,7 +8,8 @@ module.exports = function Projects ({ projects }) {
         marginBottom: '5em'
       }
     }}>
-      <h2 class='h6 caps cb track'><em>Projects</em></h2>
+      <h2 class='h6 caps track pb1'><em>Projects</em></h2>
+
       <ul class='mt1 f fw'>
         ${projects.map((int, i) => h`
           <li class='rel' css=${{
@@ -27,7 +28,7 @@ module.exports = function Projects ({ projects }) {
 
               ${int.title}
             </h4>
-            <p class='h5 mt0'>${int.caption}</p>
+            <p class='h6 mt0'>${int.caption}</p>
 
             <a href='${int.url}' target='_blank' class='abs fill z1'></a>
           </li>
