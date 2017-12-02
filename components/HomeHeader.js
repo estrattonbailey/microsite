@@ -1,6 +1,6 @@
 const h = require('../lib/h.js')
 
-module.exports = function Header (title, subtitle) {
+module.exports = function Header (caption) {
   return h`
     <div css=${{
       marginBottom: '3em',
@@ -8,10 +8,8 @@ module.exports = function Header (title, subtitle) {
         marginBottom: '5em'
       }
     }}'>
-      <h1><a href='/' css=${{
-        color: 'var(--c1)',
-        textDecoration: 'none'
-      }}>estrattonbailey</a>/${title}/${subtitle || null}</h1>
+      <h1>estrattonbailey</h1>
+      <p class='mt05 mb075'>${caption}</p>
 
       <div class='f aic'>
         <a href='https://github.com/estrattonbailey' target='_blank' class='f aic b mr1' css=${{
