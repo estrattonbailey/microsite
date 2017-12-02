@@ -1,6 +1,4 @@
-const h = require('bel')
-const cxs = require('cxs')
-const cx = require('classnames')
+const h = require('../lib/h.js')
 
 module.exports = function Outer (children, ...props) {
   const style = {
@@ -13,7 +11,7 @@ module.exports = function Outer (children, ...props) {
   }
 
   return h`
-    <section class='${cxs(style)}' ${props}>
+    <section css=${style} ${props}>
       ${children}
     </section>
   `
