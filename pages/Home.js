@@ -6,13 +6,15 @@ const Header = require('../components/HomeHeader.js')
 const Internets = require('../components/Internets.js')
 const Projects = require('../components/Projects.js')
 const Resume = require('../components/Resume.js')
+const Footer = require('../components/Footer.js')
 
 module.exports = connect(function Home([ homepage, internets, projects ]) {
   return Outer([
     Header(homepage.bio),
     Internets(internets),
     Projects(projects),
-    Resume()
+    Resume(),
+    Footer()
   ])
 }, function () {
   const homepage = api.getEntries({

@@ -1,17 +1,16 @@
 const h = require('../lib/h.js')
 
-module.exports = function Header (caption) {
+module.exports = function Footer () {
   return h`
-    <div css=${{
-      marginBottom: '3em',
-      '@media': {
-        marginBottom: '5em'
-      }
-    }}'>
-      <h1>Eric Bailey</h1>
-      <p class='h2 mt05 mb075'>${caption}</p>
+    <div css=${{}}'>
+      <hr css=${{
+        margin: '3em 0',
+        '@media (min-width: 900px)': {
+          margin: '5em 0'
+        }
+      }} />
 
-      <div class='f aic'>
+      <div class='f aic jce'>
         <a href='https://github.com/estrattonbailey' target='_blank' class='f aic b mr1' css=${{
           color: 'var(--c1)',
           textDecoration: 'none',

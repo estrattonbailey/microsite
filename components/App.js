@@ -26,16 +26,49 @@ module.exports = function App (children = '', css = '') {
         <meta name="twitter:image" content=""/>
 
         <link rel='stylesheet' href='https://unpkg.com/svbstrate@4.0.6/dist/svbstrate.css' />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' />
         <link rel='stylesheet' href='/main.css' />
 
         <title>estrattonbailey</title>
 
         <style>
-          ${css}
+          .nav {
+            padding: 1em 1.2em;
+            max-width: 1200px;
+          }
+          .nav li {
+            margin-left: 2em;
+          }
+          @media (min-width: 900px) {
+            .nav {
+              padding: 2em 3em;
+            }
+          }
         </style>
+
+        <script>
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', 'UA-40494652-14', 'auto');
+          ga('send', 'pageview');
+        </script>
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
       </head>
       <body>
-        ${children}
+        <nav class='nav mxa f aic jcb'>
+          <h1 class='h5 b'><a href='/'>estrattonbailey</a></h1>
+          <ul class='block x f aic jce fa h6 b i caps track'>
+            <li><a href='/notes'>notes</a></li>
+          </ul>
+        </nav>
+
+        <div id='root'>
+          <style>
+            ${css}
+          </style>
+          ${children}
+        </div>
+
+        <script src='/index.js'></script>
       </body>
     </html>
   `
