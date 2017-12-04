@@ -4,7 +4,7 @@
   "main": "/server/index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "build": "browserify app/index.js --debug | exorcist public/index.js.map > public/index.js",
+    "build": "NODE_ENV=production browserify -t babelify app/index.js --debug | exorcist public/index.js.map | uglifyjs > public/index.js",
     "watch": "watchify -t babelify ./app/index.js -o ./public/index.js"
   },
   "author": "estrattonbailey",
@@ -17,6 +17,7 @@
     "concurrently": "^3.5.0",
     "exorcist": "^1.0.0",
     "nodemon": "^1.11.0",
+    "uglify-js": "^3.2.1",
     "uglifyify": "^4.0.5",
     "watchify": "^3.9.0"
   },
