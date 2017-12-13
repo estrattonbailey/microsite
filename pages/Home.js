@@ -1,7 +1,7 @@
-const h = require('bel')
 const api = require('../lib/api.js')
 const connect = require('../lib/connect.js')
-const Outer = require('../components/Outer.js')
+const App = require('../components/App.js')
+const Nav = require('../components/Nav.js')
 const Header = require('../components/HomeHeader.js')
 const Internets = require('../components/Internets.js')
 const Projects = require('../components/Projects.js')
@@ -9,7 +9,7 @@ const Resume = require('../components/Resume.js')
 const Footer = require('../components/Footer.js')
 
 module.exports = connect(function Home([ homepage, internets, projects ]) {
-  return Outer([
+  return App([
     Header(homepage.bio),
     Internets(internets),
     Projects(projects),

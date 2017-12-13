@@ -10,9 +10,9 @@ module.exports = function Projects ({ projects }) {
     }}>
       <h2 class='h6 caps track pb1'><em>Projects</em></h2>
 
-      <ul class='mt1 f fw'>
+      <ul class='mt1 f fw rel'>
         ${projects.map((int, i) => h`
-          <li class='rel' css=${{
+          <li class='project rel' css=${{
             margin: '0 3em 1em 0',
             '&:hover sup': {
               'opacity': 1
@@ -28,7 +28,7 @@ module.exports = function Projects ({ projects }) {
 
               ${int.title}
             </h4>
-            <p class='h6 mt0'>${int.caption}</p>
+            <p class='h6 mt0 rel'>${int.caption}</p>
 
             <a href='${int.url}' target='_blank' class='abs fill z1'></a>
           </li>

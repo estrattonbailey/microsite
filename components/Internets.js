@@ -12,7 +12,7 @@ module.exports = function Header ({ internets }) {
 
       <ul class='mt1 f fw'>
         ${internets.map((int, i) => h`
-          <li class='rel' css=${{
+          <li class='internet rel' css=${{
             margin: '0 3em 1em 0',
             '&:hover sup': {
               'opacity': 1
@@ -29,7 +29,7 @@ module.exports = function Header ({ internets }) {
               ${int.title}
             </h3>
 
-            <p class='h6 mt0 f aic' css=${{ marginTop: '-3px' }}>
+            <p class='h6 mt0 f aic rel' css=${{ marginTop: '-3px' }}>
               <span css=${{ color: 'var(--c1)' }}>@ ${int.company}</span>
               <span class='mx05'>-</span>
               <span class='i'>${int.launchDate}</span>

@@ -14,8 +14,9 @@ module.exports = function Footer () {
         <a href='https://github.com/estrattonbailey' target='_blank' class='f aic b mr1' css=${{
           color: 'var(--c1)',
           textDecoration: 'none',
-          '&:focus': {
-            outline: '1px dashed currentColor'
+          '&:focus, &:hover': {
+            outline: '0',
+            color: 'var(--c0)'
           }
         }}>
           <span class='mr05' css=${{ color: 'var(--c0)' }}>↳</span>GitHub
@@ -23,8 +24,9 @@ module.exports = function Footer () {
         <a href='https://twitter.com/estrattonbailey' target='_blank' class='f aic b' css=${{
           color: 'var(--c1)',
           textDecoration: 'none',
-          '&:focus': {
-            outline: '1px dashed currentColor'
+          '&:focus, &:hover': {
+            outline: '0',
+            color: 'var(--c0)'
           }
         }}>
           <span class='mr05' css=${{ color: 'var(--c0)' }}>↳</span>Twitter
