@@ -124,3 +124,12 @@ pre code {
 .rte p {
   margin: 1em 0;
 }
+
+.internet:hover::before,
+.project:hover::before {
+  content:'';
+  display: block;
+  position: absolute;
+  bottom: -0.4em; left: -2em; right: -2em; top: -1em;
+  background: whitesmoke;
+}
